@@ -1,4 +1,103 @@
 body {
-  background: white;
-  font-family: sans-serif;
+  background: #4D4755;
+  font-family: 'Wizard world', sans-serif;
+}
+
+/* Onderdeel Pie Chart */
+.arc text{
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path{
+  stroke: white;
+}
+
+.title{
+  fill: #fbfbfb;
+  font-weight: bold;
+}
+
+/* Onderdeel header */
+header {
+  display: flex;
+}
+
+header .img-logo {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px
+}
+
+/* Swiper */
+
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.kaart-info {
+  position: absolute;
+  bottom: 75px;
+  left: 20px;
+  text-shadow: 1px 1px white;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  color: #50472d;
+  font-family: 'BenchNine', sans-serif;
+  
+}
+
+
+.swiper-slide:nth-child(1n) {
+  background-color: #E9D18B;
+  background-image: linear-gradient(to bottom right,#968655,#E9D18B);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
 }
