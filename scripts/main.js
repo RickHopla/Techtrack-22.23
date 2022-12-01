@@ -66,7 +66,14 @@ const createPiechart = (info) => {
     // create 2 data_set
     const data1 = {a: hufflepuff, b: gryffindor, c: slytherin, d: ravenclaw, e: noHouse}
     
- 
+    svg
+    .selectAll(null)
+    .data(data)
+    .join('text')
+    .text(function(d){ console.log(d)})
+    .attr("transform", function(d) { return `translate(${arcGenerator.centroid(d)})`})
+    .style("text-anchor", "middle")
+    .style("font-size", 17)
     // set the color scale
     const color = d3.scaleOrdinal()
     .range(["#dfcc73", "#b00e1a", "#14600d", "#09487b", "#abacab"]);
