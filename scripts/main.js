@@ -68,7 +68,7 @@ const createPiechart = (info) => {
     
     svg
     .selectAll(null)
-    .data(data)
+    .data(data1)
     .join('text')
     .text(function(d){ console.log(d)})
     .attr("transform", function(d) { return `translate(${arcGenerator.centroid(d)})`})
